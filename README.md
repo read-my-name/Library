@@ -6,3 +6,11 @@
 
  Feel free to give some comments on it!
  Thanks!
+
+ Naming Convention (applied on variable and function)
+ int		= n
+ char		= c
+ string		= sz
+ CString	= str
+ struct		= st
+ long		= l
