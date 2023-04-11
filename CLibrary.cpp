@@ -56,11 +56,26 @@ std::string CLibrary::num2roman(int iNum)
 	return sOut;
 }
 
-int CLibrary::roman2num(std::string& sIn)
+int CLibrary::roman2num(std::string sIn)
 {
-	int iOut = 0;
+	std::unordered_map <char, int> umrtoi{
+	{'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000} };
 
+	int iRes = 0;
+	int iLen = int(sIn.size());
+	for (int i = 0; i < iLen; i++)
+	{
+		if (umrtoi[sIn[i]] < umrtoi[sIn[i + 1]])
+		{// if you wonder why sIn[i+1] will not error at here, because it creates a new key
+			//which is {"\0",0} in map
+			iRes = iRes - umrtoi[sIn[i]];
+		}
+		else
+		{
+			iRes = iRes + umrtoi[sIn[i]];
+		}
+	}
 
-	return iOut;
+	return iRes;
 }
 
