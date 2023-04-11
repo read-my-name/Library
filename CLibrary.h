@@ -28,6 +28,8 @@ public:
 
     int print_char_array(std::ostream& os, char* string);
     bool is_digit(std::string& sIn);
+    std::string num2roman(int number);
+    int roman2num(std::string sIn);
 
 private:
 
