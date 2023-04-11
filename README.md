@@ -1,22 +1,22 @@
-# Algo_lib
- Algorithm library
+# Library Development
 
- Hi, everyone.
- I am going to store every algorithms that I learnt, I found, I realised and I enjoyed to here!
+## Introduction
+Welcome to library R&D sharing respository.
 
- Feel free to give some comments on it!
- Thanks!
+## Content
+<details open>
+    <summary>1. Update questions at regular time</summary>
+    <ul>
+        <li>Mostly on weekdays</li>
+        <li>At night or midnight</li>
+    </ul>
+</details>
+<details open>
+    <summary>2. Collect and develop useful library</summary>
+    <ul>
+        <li>Based on developed function or library</li>
+    </ul>
+</details>
 
- Naming Convention (applied on variable and function)
- int			= n
- char			= c
- string			= sz
- CString		= str
- struct			= st
- long			= l
- unordered set	= us;
-
- Depth First Search
- Time Complexity	= O(Vectices + Edge) = O(V+N)
- Space Complexity	= O(V) //How many level of vertices
- Application		= Use to find the edge/node which is far away
+## Most Common Used Language
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=read-my-name&exclude_repo=trading_system,read_my_name,Docker_Container,react-tutorial,leetcode-Lib)](https://github.com/anuraghazra/github-readme-stats)
