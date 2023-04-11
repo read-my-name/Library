@@ -67,7 +67,8 @@ int CLibrary::roman2num(std::string sIn)
 	{
 		if (umrtoi[sIn[i]] < umrtoi[sIn[i + 1]])
 		{// if you wonder why sIn[i+1] will not error at here, because it creates a new key
-			//which is {"\0",0} in map
+			//which is {'\0',0} in map if the key doesn't exist.
+			// Also, [i+1] returns the actual null terminator '\0'
 			iRes = iRes - umrtoi[sIn[i]];
 		}
 		else
