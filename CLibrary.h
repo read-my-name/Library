@@ -30,6 +30,8 @@ public:
     bool is_digit(std::string& sIn);
     std::string num2roman(int number);
     int roman2num(std::string sIn);
+    std::string sSortLower(std::string s);
+    std::string sSortUpper(std::string s);
 
 private:
 

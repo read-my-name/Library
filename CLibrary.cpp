@@ -80,3 +80,32 @@ int CLibrary::roman2num(std::string sIn)
 	return iRes;
 }
 
+std::string CLibrary::sSortLower(std::string s)
+{
+	std::string sRes;
+	int iCount[26] = { 0 };
+	for (char ch : s)
+	{
+		iCount[ch - 'a']++;
+	}
+	for (int i = 0; i < 26; i++)
+	{
+		sRes += std::string(iCount[i], i + 'a');
+	}
+	return sRes;
+}
+
+std::string CLibrary::sSortUpper(std::string s)
+{
+	std::string sRes;
+	int iCount[26] = { 0 };
+	for (char ch : s)
+	{
+		iCount[ch - 'A']++;
+	}
+	for (int i = 0; i < 26; i++)
+	{
+		sRes += std::string(iCount[i], i + 'A');
+	}
+	return sRes;
+}
