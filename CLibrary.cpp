@@ -82,7 +82,7 @@ int CLibrary::roman2num(std::string sIn)
 
 std::string CLibrary::sSortLower(std::string s)
 {
-	std::string sRes;
+	std::string sRes = "";
 	int iCount[26] = { 0 };
 	for (char ch : s)
 	{
@@ -97,7 +97,7 @@ std::string CLibrary::sSortLower(std::string s)
 
 std::string CLibrary::sSortUpper(std::string s)
 {
-	std::string sRes;
+	std::string sRes = "";
 	int iCount[26] = { 0 };
 	for (char ch : s)
 	{
