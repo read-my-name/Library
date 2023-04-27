@@ -26,6 +26,21 @@ public:
         std::cout << "\n";
     }
 
+    template <typename doubleVec>
+    void print_double_vector(const std::vector<std::vector<doubleVec>>& vec, std::string sSep = " ")
+    {
+        for (auto element1 : vec)
+        {
+            std::cout << "[";
+            for (auto element2 : element1)
+            {
+                std::cout << element2 << sSep;
+            }
+            std::cout << "]";
+        }
+        std::cout << "\n";
+    }
+
     int print_char_array(std::ostream& os, char* string);
     bool is_digit(std::string& sIn);
     std::string num2roman(int number);
