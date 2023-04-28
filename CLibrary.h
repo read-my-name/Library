@@ -17,7 +17,7 @@ public:
 
     //  Template function to print a vector on console
     template <typename T>
-    void print_vector(const std::vector<T>& vec, std::string sSep = " ")
+    void print_1Dvector(const std::vector<T>& vec, std::string sSep = " ")
     {
         for (auto element : vec)
         {
@@ -27,7 +27,7 @@ public:
     }
 
     template <typename doubleVec>
-    void print_double_vector(const std::vector<std::vector<doubleVec>>& vec, std::string sSep = " ")
+    void print_2Dvector(const std::vector<std::vector<doubleVec>>& vec, std::string sSep = " ")
     {
         for (auto element1 : vec)
         {
