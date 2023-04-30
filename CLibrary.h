@@ -1,5 +1,6 @@
 #pragma once
 #include "include.h"
+#include "CTemplate.h"
 
 #ifdef DEBUG
 
@@ -15,30 +16,17 @@ public:
 	CLibrary();
 	~CLibrary();
 
-    //  Template function to print a vector on console
-    template <typename T>
-    void print_1Dvector(const std::vector<T>& vec, std::string sSep = " ")
+    template <typename vec1d>
+    void print_1Dvector(const std::vector<vec1d>& vec, std::string sSep = " ")
     {
-        for (auto element : vec)
-        {
-            std::cout << element << sSep;
-        }
-        std::cout << "\n";
+        CTemplate cTmp;
+        cTmp.print_1Dvector(vec, sSep);
     }
-
-    template <typename doubleVec>
-    void print_2Dvector(const std::vector<std::vector<doubleVec>>& vec, std::string sSep = " ")
+    template <typename vec2d>
+    void print_2Dvector(const std::vector<vec2d>& vec, std::string sSep = " ")
     {
-        for (auto element1 : vec)
-        {
-            std::cout << "[";
-            for (auto element2 : element1)
-            {
-                std::cout << element2 << sSep;
-            }
-            std::cout << "]";
-        }
-        std::cout << "\n";
+        CTemplate cTmp;
+        cTmp.print_2Dvector(vec, sSep);
     }
 
     int print_char_array(std::ostream& os, char* string);
