@@ -50,9 +50,8 @@ std::string CTimer::getTime(eTimeFormat eFormat /* = 0 */)
         default:
             strftime(buf, sizeof(buf), "%c", &tstruct);
             break;
-
     }
-
+    //std::string sRes(buf);
     sRes.assign(buf);
 	return sRes;
 }
