@@ -110,7 +110,7 @@ std::string CLibrary::sSortUpper(std::string s)
 	return sRes;
 }
 
-void CLibrary::trimLeft(std::string& s) 
+void CLibrary::trimLeft(std::string &s) 
 {// trim from start (in place)
 	s.erase
 	(
@@ -120,7 +120,7 @@ void CLibrary::trimLeft(std::string& s)
 	));
 }
 
-void CLibrary::trimRight(std::string& s) 
+void CLibrary::trimRight(std::string &s) 
 {// trim from end (in place)
 	s.erase
 	(
