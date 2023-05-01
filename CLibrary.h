@@ -35,6 +35,8 @@ public:
     int roman2num(std::string sIn);
     std::string sSortLower(std::string s);
     std::string sSortUpper(std::string s);
+    void trimLeft(std::string &sIn);
+    void trimRight(std::string& sIn);
 
 private:
 

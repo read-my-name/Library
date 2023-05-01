@@ -109,3 +109,23 @@ std::string CLibrary::sSortUpper(std::string s)
 	}
 	return sRes;
 }
+
+void CLibrary::trimLeft(std::string& s) 
+{// trim from start (in place)
+	s.erase
+	(
+		s.begin(), 
+		std::find_if(s.begin(), 
+		s.end(), [](unsigned char ch) { return !std::isspace(ch); }
+	));
+}
+
+void CLibrary::trimRight(std::string& s) 
+{// trim from end (in place)
+	s.erase
+	(
+		std::find_if(s.rbegin(), 
+		s.rend(), 
+		[](unsigned char ch) { return !std::isspace(ch); }
+	).base(), s.end());
+}
