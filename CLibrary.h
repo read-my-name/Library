@@ -37,6 +37,7 @@ public:
     std::string sSortUpper(std::string s);
     void trimLeft(std::string &sIn);
     void trimRight(std::string& sIn);
+    void vSwapNumber(int &i1, int &i2); //reduce space complexity without temporary variable
 
 private:
 

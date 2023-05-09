@@ -129,3 +129,15 @@ void CLibrary::trimRight(std::string &s)
 		[](unsigned char ch) { return !std::isspace(ch); }
 	).base(), s.end());
 }
+
+void CLibrary::vSwapNumber(int &i1, int &i2)
+{
+	if (i1 == i2)
+	{
+		return;
+	}
+
+	i1 = i1 + i2;
+	i2 = i1 - i2;
+	i1 = i1 - i2;
+}
