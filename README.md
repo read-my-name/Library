@@ -1,7 +1,7 @@
 # Library Development
 
 ## Introduction
-Welcome to library R&D sharing respository.
+Welcome to library R&D sharing respository. The .lib file is provided.
 
 ## Content
 <details open>
