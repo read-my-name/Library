@@ -38,24 +38,3 @@ private:
 #include "CQueueLinkedList.tpp"
 
 #endif
-
-//Example
-//CQueueLinkedList<std::string> cq1;
-//
-//cq1.vEnqueue("Adam");
-//cq1.vEnqueue("Bravo");
-//cq1.vEnqueue("Charlie");
-//
-//std::cout << cq1.iSize() << "\n";
-//std::cout << cq1.dtDequeue() << "\n";
-//std::cout << cq1.iSize() << "\n";
-//
-//std::cout << cq1.dtDequeue() << "\n";
-//std::cout << cq1.iSize() << "\n";
-//
-//cq1.vEnqueue("Delta");
-//cq1.vEnqueue("Elsa");
-//cq1.vEnqueue("Franklin");
-//
-//std::cout << cq1.dtDequeue() << "\n";
-//std::cout << cq1.iSize() << "\n";
