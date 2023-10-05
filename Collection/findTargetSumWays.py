@@ -31,10 +31,8 @@ class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:      
         def dfs(index=0, total=0):          
             if index == len(nums): 
-				# 2
                 return 1 if total == target else 0
             else:
-				# 
                 return dfs(index+1, total + nums[index]) + dfs(index+1, total - nums[index])                                                               
 
         return dfs()
